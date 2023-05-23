@@ -6,7 +6,6 @@
     max-width: 849px;
     min-width: 600px;
     font-family:'Gill Sans', 'Gill Sans MT';
-    font-size: 18px;
 }
 a img{
     width: 2vh;
@@ -65,10 +64,39 @@ a img{
   .gallery .col-3{
     padding: 0;
   }
+  .gallery .col-3:hover img {
+    opacity: 0.8;
+}
+
+.gallery .col-3:hover .text-overlay {
+    opacity: 1;
+}
+
+.gallery .col-3 .text-overlay {
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.568);
+    color: #fff;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.text-overlay{
+    width: 90%;
+}
+.carousel-control-next, .carousel-control-prev {
+    width: 7%;
+    
+}
+
   @media (max-width: 849px) and (min-width: 600px) {
     #mail1{
         display: none;
     }
+
     .container-lg{
         font-size: 14px;
     }
@@ -103,6 +131,12 @@ a img{
         width: 40px;
 
     }
+    .gallery .title3{
+        display: none;
+    }
+    .gallery .title4{
+        display: none;
+    }
 }
 @media (max-width: 599px) and (min-width: 0px) {
     #mail1{
@@ -110,9 +144,6 @@ a img{
     }
     .container-lg{
         font-size: 14px;
-    }
-    .container-lg{
-        font-size: 12px;
     }
     .center-line .row {
         display: flex;
@@ -179,16 +210,23 @@ a img{
 
     }
     .img2{
+        
         width: 100%;
     }
     .px-5{
         display: none;
     }
-    .qqwwee{
-        width: 100%;
-    }
     .img-enlarged{
         width: 100%;
         height: auto;
+    }
+    .gallery .title2{
+        display: none;
+    }
+    .gallery .title3{
+        display: none;
+    }
+    .gallery .title4{
+        display: none;
     }
 }

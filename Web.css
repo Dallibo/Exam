@@ -92,11 +92,14 @@ a img{
     
 }
 
+
   @media (max-width: 849px) and (min-width: 600px) {
     #mail1{
         display: none;
     }
-
+    .pt-3 {
+        padding-top: 0.1rem!important;
+    }
     .container-lg{
         font-size: 14px;
     }
@@ -229,4 +232,10 @@ a img{
     .gallery .title4{
         display: none;
     }
+}
+@media (min-width: 576px){
+.navbar-expand-sm { 
+    display: n;
+
+}
 }
